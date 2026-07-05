@@ -6,10 +6,14 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "server": "node server/src/index.js",
+    "server:dev": "nodemon server/src/index.js"
   },
   "dependencies": {
+    "mongodb-memory-server": "^11.2.0",
     "next": "16.2.10",
+    "nodemon": "^3.1.14",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },

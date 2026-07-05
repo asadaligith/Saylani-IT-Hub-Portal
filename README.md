@@ -1,3 +1,33 @@
+# Saylani Mass IT Hub Portal
+
+This workspace contains a Next.js frontend (root) and an Express + MongoDB backend (in `/server`).
+
+Quick start
+
+1. Start MongoDB (e.g., `mongod`).
+2. Install dependencies:
+
+```bash
+npm install
+cd server
+npm install
+```
+
+3. Copy server/.env.example to `server/.env` and set `MONGO_URI` and `JWT_SECRET`.
+
+4. Run backend (in one terminal):
+
+```bash
+npm run server:dev
+```
+
+5. Run frontend (in another terminal):
+
+```bash
+npm run dev
+```
+
+API server runs on `http://localhost:5000` by default. The frontend expects that URL; set `NEXT_PUBLIC_API_URL` if different.
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
