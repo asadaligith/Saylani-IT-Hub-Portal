@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {
-  res.json({ message: "Welcome to the API" });
+  res.send({ message: "Welcome to the API" });
 });
 
 app.use("/uploads", express.static(path.join(__dirname, "../uploads")));
